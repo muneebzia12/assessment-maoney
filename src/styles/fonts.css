@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "bold";
-  src: url("../assets/fonts/Signika-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/grifterbold.otf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
@@ -27,7 +27,7 @@
 }
 @font-face {
   font-family: "medium";
-  src: url("../assets/fonts/Signika-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/grifterbold.otf") format("truetype");
   font-weight: semibold;
   font-style: semibold;
 }

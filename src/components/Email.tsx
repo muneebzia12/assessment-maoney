@@ -7,7 +7,7 @@ const EmailInput = () => {
     //   <span className="download-btn emailicon">Subscribe</span>
     // </div>
     <div className="email-input-container">
-      <input type="email" className="email-input" placeholder="Your email" />
+      <input style={{fontFamily:'light'}} type="email" className="email-input" placeholder="Your email" />
       <div className="icon-rtl"></div>
     </div>
   );

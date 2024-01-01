@@ -243,6 +243,7 @@ text-align: center;
   text-align: center;
   margin: 10px;
   padding: 10px;
+  min-height: 55px;
 }
 .list-items:hover {
 stroke: red;

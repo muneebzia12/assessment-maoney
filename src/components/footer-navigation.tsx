@@ -57,7 +57,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ label, path }) => {
           lineHeight: "19px",
           letterSpacing: "0em",
           textAlign: "left",
-          fontFamily: "medium",
+          fontFamily: "light",
         }}
       >
         {label}
@@ -75,11 +75,11 @@ const FooterNavigation: FC = () => {
         spacing={2}
         style={{
           margin: isMobile ? "1rem 2rem" : "15px 4rem",
-          fontFamily: "medium",
+          fontFamily: "light",
         }}
       >
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium" }} variant="h6">
+          <Typography style={{ fontFamily: "light" }} variant="h6">
             Company{" "}
           </Typography>
           {companyMenu.map(({ label, path }, index) => (
@@ -91,7 +91,7 @@ const FooterNavigation: FC = () => {
           ))}
         </Grid>
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium" }} variant="h6">
+          <Typography style={{ fontFamily: "light" }} variant="h6">
             Product
           </Typography>
           {productMenu.map(({ label, path }, index) => (
@@ -99,7 +99,7 @@ const FooterNavigation: FC = () => {
           ))}
         </Grid>
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium" }} variant="h6">
+          <Typography style={{ fontFamily: "light" }} variant="h6">
             Legal
           </Typography>
           {legalMenu.map(({ label, path }, index) => (

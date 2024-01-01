@@ -64,7 +64,9 @@ export default function GlobalCompare() {
               alt="no"
               style={{ marginTop: "4rem", maxWidth: "-webkit-fill-available" }}
             />
-            <p className="heading" style={{fontFamily:'medium'}}>Global accounts in minutes </p>
+            <p className="heading" style={{ fontFamily: "medium" }}>
+              Global accounts in minutes{" "}
+            </p>
             <div
               style={{
                 display: "flex",
@@ -72,16 +74,39 @@ export default function GlobalCompare() {
                 margin: "10px",
               }}
             >
-              <div className="intro-desc" style={{ textAlign: "left" }}>
+              <div
+                className="intro-desc"
+                style={{
+                  textAlign: "left",
+                  fontFamily: "light",
+                  alignSelf: "flex-start",
+                  paddingLeft: '23px'
+                }}
+              >
                 FinanceFast solves problems by proving low fees, fast transfers,
-                <p style={{ textAlign: "left" }}>
+                <p
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "light",
+                    display: "inline",
+                  }}
+                >
                   secure transactions, and a user-friendly platform.
                 </p>
               </div>
 
-              <div className="intro-desc-mob" style={{ textAlign: "left", fontFamily:'medium' }}>
+              <div
+                className="intro-desc-mob"
+                style={{ textAlign: "left", fontFamily: "medium" }}
+              >
                 Say Goodbye to the Hassles of Traditional Money
-                <p style={{ textAlign: "left", fontFamily:'medium' }}>
+                <p
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "medium",
+                    display: "inline",
+                  }}
+                >
                   Transfers. Effortlessly transfer with ease.{" "}
                 </p>
               </div>

@@ -2,7 +2,7 @@ const CurrencyIntro = () => {
   return (
     <div style={{ marginTop: "5rem", marginBottom: "5rem" }}>
       <div className="row">
-        <p className="crossborder-desc">
+        <p className="crossborder-desc" style={{fontFamily:'light'}}>
           {"real-time exchange rate"?.toUpperCase()}
         </p>
         <p className="heading" style={{fontFamily:'light'}}>Effortlessly Convert </p>

@@ -10,13 +10,13 @@ const PaymentIntro = () => {
           Payment Hassles
         </p>
         <div style={{ margin: "2rem 0.6rem" }}>
-          <div className="intro-desc">
+          <div className="intro-desc" style={{ fontFamily: "light" }}>
             Start your journey to hassle free Cross-Border Payments by
             downloading the
             <p>FastFinance app from your iOS of Android store.</p>
           </div>
 
-          <div className="intro-desc-mob">
+          <div className="intro-desc-mob" style={{ fontFamily: "light" }}>
             Start your journey to hassle free Cross-Border
             <p>Payments with FastFinance. </p>
           </div>
