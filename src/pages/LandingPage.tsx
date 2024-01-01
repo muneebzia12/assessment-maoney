@@ -13,8 +13,6 @@ import Accordion from "../components/Accordions";
 import CardCarousel from "../components/CardCarousel";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import CrousalBanner from "../components/Crousal";
-import CrousalText from "../components/CrousalText";
 
 const LandingPage: React.FC = () => {
   return (
