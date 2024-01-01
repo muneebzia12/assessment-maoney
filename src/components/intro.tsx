@@ -1,4 +1,3 @@
-
 const styles = {
   headerText: { fontFamily: "medium" },
 };
@@ -12,13 +11,16 @@ const Intro = () => {
         <p style={styles.headerText} className="heading trans-h">
           Transactions with
           <span className="grad-heading">
-            <p className="purple-heading" style={{ display: "inherit",fontFamily: "medium" }}>
+            <p
+              className="purple-heading"
+              style={{ display: "inherit", fontFamily: "medium" }}
+            >
               One Platform
             </p>
           </span>
         </p>
         <div>
-          <div className="intro-desc" style={{fontFamily:'light'}}>
+          <div className="intro-desc" style={{ fontFamily: "medium" }}>
             Say Goodbye to the Hassles of Traditional Money Transfers.
             FinanceFast allows
             <p>
@@ -27,7 +29,7 @@ const Intro = () => {
             </p>
           </div>
 
-          <div className="intro-desc-mob">
+          <div className="intro-desc-mob" style={{ fontFamily: "medium" }}>
             Say Goodbye to the Hassles of Traditional Money
             <p>Transfers. Effortlessly transfer with ease. </p>
           </div>

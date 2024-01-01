@@ -64,7 +64,7 @@ export default function GlobalCompare() {
               alt="no"
               style={{ marginTop: "4rem", maxWidth: "-webkit-fill-available" }}
             />
-            <p className="heading">Global accounts in minutes </p>
+            <p className="heading" style={{fontFamily:'medium'}}>Global accounts in minutes </p>
             <div
               style={{
                 display: "flex",
@@ -79,9 +79,9 @@ export default function GlobalCompare() {
                 </p>
               </div>
 
-              <div className="intro-desc-mob" style={{ textAlign: "left", fontFamily:'light' }}>
+              <div className="intro-desc-mob" style={{ textAlign: "left", fontFamily:'medium' }}>
                 Say Goodbye to the Hassles of Traditional Money
-                <p style={{ textAlign: "left", fontFamily:'light' }}>
+                <p style={{ textAlign: "left", fontFamily:'medium' }}>
                   Transfers. Effortlessly transfer with ease.{" "}
                 </p>
               </div>

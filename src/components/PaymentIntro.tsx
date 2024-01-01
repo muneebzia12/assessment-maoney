@@ -3,8 +3,12 @@ const PaymentIntro = () => {
     <div style={{ marginTop: "5rem", marginBottom: "5rem" }}>
       <div className="row">
         <p className="crossborder-desc">Cross-Border Transactions</p>
-        <p className="heading">Say Goodbye to International </p>
-        <p className="heading trans-h">Payment Hassles</p>
+        <p className="heading" style={{ fontFamily: "medium" }}>
+          Say Goodbye to International{" "}
+        </p>
+        <p className="heading trans-h" style={{ fontFamily: "medium" }}>
+          Payment Hassles
+        </p>
         <div style={{ margin: "2rem 0.6rem" }}>
           <div className="intro-desc">
             Start your journey to hassle free Cross-Border Payments by
