@@ -1,4 +1,3 @@
-import TelInput from "./TelInput";
 
 const IntroDescs = ({
   upperDesc,

@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import Grid from "@mui/material/Grid";
-import FooterSectionTitle from "../components/footer-section-title";
 import Link from "@mui/material/Link";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import useIsMobile from "./useIsMobile";
 import EmailInput from "./Email";
 
@@ -58,7 +57,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ label, path }) => {
           lineHeight: "19px",
           letterSpacing: "0em",
           textAlign: "left",
-          fontFamily: "medium"
+          fontFamily: "medium",
         }}
       >
         {label}
@@ -74,10 +73,15 @@ const FooterNavigation: FC = () => {
       <Grid
         container
         spacing={2}
-        style={{ margin: isMobile ? "1rem 2rem" : "15px 4rem",  fontFamily: "medium" }}
+        style={{
+          margin: isMobile ? "1rem 2rem" : "15px 4rem",
+          fontFamily: "medium",
+        }}
       >
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium"}} variant="h6">Company </Typography>
+          <Typography style={{ fontFamily: "medium" }} variant="h6">
+            Company{" "}
+          </Typography>
           {companyMenu.map(({ label, path }, index) => (
             <NavigationItem
               key={index + path}
@@ -87,13 +91,17 @@ const FooterNavigation: FC = () => {
           ))}
         </Grid>
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium"}} variant="h6">Product</Typography>
+          <Typography style={{ fontFamily: "medium" }} variant="h6">
+            Product
+          </Typography>
           {productMenu.map(({ label, path }, index) => (
             <NavigationItem key={index + path} label={label} path={path} />
           ))}
         </Grid>
         <Grid item xs={5} sm={5} md={4} xl={3}>
-          <Typography style={{ fontFamily: "medium"}} variant="h6">Legal</Typography>
+          <Typography style={{ fontFamily: "medium" }} variant="h6">
+            Legal
+          </Typography>
           {legalMenu.map(({ label, path }, index) => (
             <NavigationItem key={index + path} label={label} path={path} />
           ))}
@@ -106,7 +114,11 @@ const FooterNavigation: FC = () => {
         >
           <Grid item xs={6}>
             <Typography
-              style={{ width: "max-content", padding: "10px", fontFamily: "medium" }}
+              style={{
+                width: "max-content",
+                padding: "10px",
+                fontFamily: "medium",
+              }}
               variant="h6"
             >
               Sign up for our newsletter

@@ -1,11 +1,8 @@
 import Mobs from "../assets/svgs/mobs.svg";
 const Mobiles = () => {
-  const divStyle = {
-    backgroundImage: `url(${Mobs})`,
-  };
   return (
     // <div className="mobs-wrappers">
-    <img className="mobs-wrapper" src={Mobs} style={{}} />
+    <img className="mobs-wrapper" src={Mobs} alt="no"/>
     // </div>a
   );
 };

@@ -7,7 +7,7 @@ const Footer = () => {
         <FooterNavigation />
       </div>
       <div className="socials-wrapper">
-        <img src={socials} height={30} className="socials" />
+        <img src={socials} height={30} alt="no" className="socials" />
         <div className="socials social-typo">
           © 2023, FinanaceFast All Rights Reserved.
         </div>

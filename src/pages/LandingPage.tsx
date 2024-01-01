@@ -10,7 +10,6 @@ import CurrencyIntro from "../components/CurrencyIntro";
 import FeesCompare from "../components/FeesCompare";
 import QuestionIntro from "../components/QuestionIntro";
 import Accordion from "../components/Accordions";
-import CardCarousel from "../components/CardCarousel";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 

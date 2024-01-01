@@ -1,5 +1,3 @@
-import Mobs from "../assets/svgs/clients.svg";
-import MobsSm from "../assets/svgs/client-sm.svg";
 
 import { useEffect, useState } from "react";
 

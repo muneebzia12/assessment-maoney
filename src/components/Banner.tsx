@@ -8,6 +8,7 @@ const Banner = () => {
   return (
     <img
       src={isMobile ? banSm : ban}
+      alt="abc"
       height={370}
       style={{ minWidth: "100vw", maxWidth: "-webkit-fill-available" }}
     />
