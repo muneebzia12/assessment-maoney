@@ -1,0 +1,622 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+
+}
+
+html, body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+  background-color: white;
+  color: #3a3a3a;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  color: #3a3a3a;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  justify-content: center;
+  background-color: white !important;
+  color: #3a3a3a;
+}
+
+.menu li:hover {
+  background-color: #d8c6ff;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+
+.app-black {
+  color: #3a3a3a;
+}
+.purple {
+  color: #d8c6ff;
+}
+
+.heading {
+  color: #1a1a1a;
+  font-family: GRIFTER, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.purple-heading {
+  background: linear-gradient(180deg, #6364ff 64.58%, #563acc 100%),
+    linear-gradient(0deg, #1a1a1a, #1a1a1a);
+  /* color: transparent; */
+  font-family: GRIFTER, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-disc {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3a3a3a;
+}
+.grad-heading {
+  display: unset;
+  padding-left: 1rem;
+}
+.trans-h {
+  display: block;
+}
+.intro-desc{
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.intro-desc-mob{
+display: none;
+}
+.download-btn{
+  background-color:  #563ACC;
+  font-family: Satoshi;
+font-size: 18px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+padding: 0.8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 2rem;
+color: white;
+
+}
+.download-btn-space{
+margin-left: -9.25rem;
+
+}
+.MuiTelInput-TextField .MuiInputBase-root{
+  border-radius: 30px;
+  position: relative;
+  min-width: 400px;
+  max-width: -webkit-fill-available;}
+.tel-wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top: 2rem;
+margin-bottom: 5rem;
+
+}
+.mobs-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fill-available;
+  margin:0 10rem ;
+background-size: cover;
+min-height: 200px;
+
+}
+.crossborder-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Satoshi;
+font-size: 14px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+
+background: linear-gradient(180deg, #6364ff 64.58%, #563acc 100%),
+linear-gradient(0deg, #1a1a1a, #1a1a1a);
+
+text-align: center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.my-icon {
+  fill: rgb(104, 104, 104);
+  transition: fill 0.2s ease-in-out;
+}
+
+.my-icon:hover {
+  fill: red;
+  stroke: red;
+
+}
+.list-items{
+  display: flex;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.list-items:hover {
+stroke: red;
+border: 1px solid #94949480;
+padding: 15px;
+border-radius: 30px;
+margin-left: 0px;
+max-width: fit-content;
+}
+.clist-items{
+  display: flex;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #94949480;
+  color: #1A1A1A;
+
+}
+.clist-items:hover {
+  border-radius: 30px;
+  margin-left: 0px;
+  max-width: fit-content;
+  /* color: #563ACC; */
+  color: #1A1A1A;
+
+  stroke: #563ACC;
+  /* fill: #563ACC; */
+  }
+.cr-heading{
+  font-family: GRIFTER;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A1A1A;
+  
+}
+.cr-desc{
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.socials-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 10px;
+  padding:2rem 4rem;
+  text-align: center;
+
+}
+
+@media (max-width: 968px) {
+  .mobs-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    margin: 0 2rem;
+  background-size: cover;
+  min-height: 150px;
+  
+  }
+
+}
+.social-typo{
+  font-family: Satoshi;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.accordion-head{
+  font-family: GRIFTER;
+font-size: 16px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #1A1A1A;
+}
+.MuiTypography-root .MuiTypography-body1 .accordion-typo{
+  font-family: GRIFTER;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A1A1A;
+}
+.MuiFormControl-root .MuiFormControl-fullWidth .MuiTextField-root{
+  border: none; 
+
+}
+.email-input-container {
+  position: relative;
+}
+
+.email-input {
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.email-input:focus {
+  width: 400px;
+  padding: 10aspx;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.emailicon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #563ACC;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+
+}
+.email-input:focus,
+.email-input:active {
+  outline: 1px solid lightgray !important;
+  
+}
+
+.icon-rtl {
+  position: relative;
+  padding-right: 25px;
+  border-radius: 30px;
+}
+
+.icon-rtl::before {
+  content: "Subscribe";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  padding-left: 5px; /* Add some padding between text and icon */
+  padding: 7px;
+  background-color: #563ACC;
+  border-radius: 30px;
+  color: white;
+}
+
+.email-input-container {
+  position: relative;
+  width: 400px; /* Adjust width as needed */
+  border-radius: 30px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 400px; /* Adjust width as needed */
+  border-radius: 30px;
+}
+
+.icon-rtl {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  /* Add additional styling for your icon or text */
+}
+
+/* If using an image as an icon */
+.icon-rtl img {
+  width: 20px; /* Adjust the width of the icon */
+  height: auto;
+}
+
+/* If using text as an icon */
+.icon-rtl span {
+  /* Add additional styling for your text */
+}
+
+@media (max-width: 768px) {
+  .MuiTypography-root .MuiTypography-body1 .accordion-typo{
+    font-family: GRIFTER;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A1A1A;
+  }
+  .socials-wrapper{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  padding:2rem 5px;
+
+    
+  }
+  .socials{
+  width: max-content;
+  margin-bottom: 20px;
+
+  }
+  .social-typo{
+    font-family: Satoshi;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+  .mobs-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    margin: 0 2rem;
+  background-size: cover;
+  min-height: 100px;
+  
+  }
+  .tel-wrapper{
+    flex-direction: column;
+    max-width: -webkit-fill-available;
+
+  }
+  .download-btn-space{
+    margin-left: 0;    
+    min-width: -webkit-fill-available;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    }
+  .MuiTelInput-TextField .MuiInputBase-root{
+    border-radius: 30px;
+    position: relative;
+    max-width: 20rem;
+
+  /* min-width: 100%; */
+    /* width: 100%; */
+  }
+  .intro-desc{
+    display: none;
+  }
+  .intro-desc-mob{
+    font-family: Satoshi;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: grid;
+  }
+  
+  .trans-h {
+    display: grid;
+  }
+  .heading {
+    font-family: GRIFTER;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .grad-heading {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    background-color: white;
+    color: #3a3a3a;
+    margin-top: 20px;
+  }
+  .menu li:hover {
+    background-color: #d8c6ff !important;
+    border-radius: 15px;
+    transition: 0.9s;
+    transition: #d8c6ff 0.6s linear;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+  .purple-heading {
+    background: linear-gradient(180deg, #6364ff 64.58%, #563acc 100%),
+      linear-gradient(0deg, #1a1a1a, #1a1a1a);
+    /* color: transparent; */
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 510px) {
+  .tel-wrapper{
+    flex-direction: column;
+    max-width: -webkit-fill-available;
+  }
+  .download-btn-space{
+    margin-left: 0;    
+    min-width: -webkit-fill-available;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    }
+  .MuiTelInput-TextField .MuiInputBase-root{
+    border-radius: 30px;
+    position: relative;
+    min-width: 100%;
+  }
+  .mobs-wrapper{
+
+  background-size: contain;
+  min-height: 5.5rem;
+  background-repeat: no-repeat;
+  margin: 0 -5rem;
+  
+  }
+}

@@ -1,0 +1,33 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: "normal";
+  src: url("../assets/fonts/Signika-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/Signika-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../assets/fonts/Signika-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: light;
+}
+@font-face {
+  font-family: "medium";
+  src: url("../assets/fonts/Signika-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: medium;
+}
+@font-face {
+  font-family: "medium";
+  src: url("../assets/fonts/Signika-SemiBold.ttf") format("truetype");
+  font-weight: semibold;
+  font-style: semibold;
+}
